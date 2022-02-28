@@ -31,6 +31,11 @@ namespace UserApp
         {
             viewModel.ChangeName(txtNewName.Text);
         }
+
+        private void CollectionView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
 }

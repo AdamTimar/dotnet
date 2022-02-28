@@ -12,7 +12,7 @@
         <ListView ItemsSource="{Binding Users}" Background="White" Foreground="Black" Height="130">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}"
+                    <TextBlock Text="{Binding Datas}"
                         FontSize="24"
 Padding="10" />
                 </DataTemplate>
@@ -25,13 +25,15 @@ Padding="10" />
                 <ColumnDefinition Width="421*"/>
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="txtUserName" Text="Name" Grid.ColumnSpan="3" Margin="0,0,76,30" />
-            <TextBox x:Name="txtAge" Text="Age"  Grid.ColumnSpan="3" Margin= "0,50,76,-1.6" PreviewTextInput="NumberValidationTextBox"  />
+            <TextBox x:Name="txtUserName" Text="John" Grid.ColumnSpan="3" Margin="50,0,100,50" />
+            <TextBox x:Name="txtAge" Text="19"  Grid.ColumnSpan="3" Margin= "50,50,100,-1.6" PreviewTextInput="NumberValidationTextBox"  />
 
             <Button x:Name="btnAddNewUser"
  Content="Új felhasználó"  
  Click="btnAddNewUser_Click"
-Grid.Column="2" Margin="359.553,0,0,0.4"/>
+Grid.Column="2" Margin="320.8,0,0,0.2"/>
+            <Label Content="Name&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,-4,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Age" HorizontalAlignment="Left" Margin="7,50,0,-0.8" FontWeight="Bold"/>
         </Grid>
     </Grid>
 </UserControl>

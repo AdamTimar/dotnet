@@ -9,11 +9,11 @@ namespace UserApp.ViewModel
         public CollectionViewModel()
         {
             Users = new ObservableCollection<User>();
-            Users.Add(new User() { Name = "Administrator, 11" });
-            Users.Add(new User() { Name = "root, 52" });
-            Users.Add(new User() { Name = "Blackhawk, 32" });
-            Users.Add(new User() { Name = "User001, 45" });
-            Users.Add(new User() { Name = "Cortana, 22" });
+            Users.Add(new User() { Datas = "Administrator, 11" });
+            Users.Add(new User() { Datas = "root, 52" });
+            Users.Add(new User() { Datas = "Blackhawk, 32" });
+            Users.Add(new User() { Datas = "User001, 45" });
+            Users.Add(new User() { Datas = "Cortana, 22" });
         }
     }
 }

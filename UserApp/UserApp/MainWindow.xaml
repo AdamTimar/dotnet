@@ -12,7 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <vw:CollectionView Grid.Row="0" />
+        <vw:CollectionView Grid.Row="0" Loaded="CollectionView_Loaded" />
         <TextBlock Text="{Binding User.Name}"
  Grid.Row="1"
  Foreground="Black"

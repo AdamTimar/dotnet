@@ -27,8 +27,9 @@ namespace UserApp.View
         }
         private void btnAddNewUser_Click(object sender, RoutedEventArgs e)
         {
-            viewModel.Users.Add(new Model.User() { Name = txtUserName.Text, Age = Int32.Parse(txtAge.Text) , Datas = Name+", "+string.});
+            viewModel.Users.Add(new Model.User() { Name = txtUserName.Text, Age = Int32.Parse(txtAge.Text) , Datas = txtUserName.Text + ", "+txtAge.Text});
             txtUserName.Text = string.Empty;
+            txtAge.Text = string.Empty;
         }
 
 
